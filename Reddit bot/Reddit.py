@@ -6,7 +6,8 @@ import time
 DEBUG_MODE = False  # For Debug: Don't post to reddit, only print
 debug_posted = []  # In debug mode, remember links
 
-common_spam_list=['udemy','free','discount','coupon','course','save','money']
+# To be given as list of words which you think is spam:
+common_spam_list=[]
 reddit = praw.Reddit(client_id=client_id,
                     client_secret=client_secret,
                     username=username,
@@ -22,12 +23,12 @@ def find_spammers(query):
     return spammers
 
 if __name__=='__main__':
-    # spammers=find_spammers("Udemy")
+    # spammers=find_spammers("")
     # for aut in spammers:
     #     print(str(aut))
 
     while True:
-        current_search=random.choice(["udemy"])
+        current_search=random.choice(["#HERE GOES THE SPAM TRIGGER WORDs"])
         spam_content=[]
         users={}
         authors= find_spammers(current_search)
@@ -83,11 +84,7 @@ if __name__=='__main__':
 
             if time.time()-start_time <=86400 *10:
                 link="http://reddit.com"+sub.permalink
-                message = """*Beep boop*
-I am a bot that sniffs out spammers, and this smells like spam.
-At least {}% out of the {} submissions from /u/{} appear to be for Udemy affiliate links. 
-Don't let spam take over Reddit! Throw it out!
-*Bee bop*""".format(round(users[s_user][0]*100,2), users[s_user][1], s_user)
+                message = #MESSAGE YOU WANT TO REPLY WITH
                 try:
                     if DEBUG_MODE:
                         if link in debug_posted:
