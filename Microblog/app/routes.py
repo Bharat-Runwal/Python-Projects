@@ -7,7 +7,7 @@ from app.models import User
 from werkzeug.urls import url_parse
 from app import db
 from app.forms import RegistrationForm
-
+from datetime import datetime
 @app.route('/')
 @app.route('/index')
 @login_required
@@ -77,3 +77,10 @@ def user(username):
         {'author':user ,'body':'Text post#2'}
     ]
     return render_template('user.html',user = user,posts=posts)
+
+@app.before_request
+def before_request():
+    if current_user.is_authenticated:
+        current_user.last_seen = datetime.utcnow()
+        # we are not using db.session.add() as user is already in current session
+        db.session.commit()
