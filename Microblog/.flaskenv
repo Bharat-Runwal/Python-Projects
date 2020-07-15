@@ -1,2 +1,2 @@
 FLASK_APP=microblog.py
-FlASK_DEBUG=1
+FlASK_DEBUG=0
