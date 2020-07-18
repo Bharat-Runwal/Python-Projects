@@ -56,3 +56,4 @@ Traceback (most recent call last):
     db.commit()
 AttributeError: 'SQLAlchemy' object has no attribute 'commit'
 2020-07-18 15:19:45,596 INFO: Microblog startup [in C:\Users\lenovo\Desktop\microblog\Python-Projects\Microblog\app\__init__.py:44]
+2020-07-18 15:41:29,087 INFO: Microblog startup [in C:\Users\lenovo\Desktop\microblog\Python-Projects\Microblog\app\__init__.py:44]
