@@ -34,3 +34,4 @@ Traceback (most recent call last):
     {{form.submit(value='Follow')}}
 jinja2.exceptions.UndefinedError: 'app.forms.EmptyForm object' has no attribute 'submit'
 2020-07-17 15:19:57,326 INFO: Microblog startup [in C:\Users\lenovo\Desktop\microblog\Python-Projects\Microblog\app\__init__.py:44]
+2020-07-18 14:45:06,594 INFO: Microblog startup [in C:\Users\lenovo\Desktop\microblog\Python-Projects\Microblog\app\__init__.py:44]

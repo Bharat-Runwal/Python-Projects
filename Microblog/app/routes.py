@@ -1,18 +1,25 @@
 from flask import render_template
-from app import app 
-from app.forms import LoginForm, RegistrationForm,EditProfileForm,EmptyForm
+from app import app,db
+from app.forms import LoginForm, RegistrationForm,EditProfileForm,EmptyForm,PostForm
 from flask import flash,redirect,url_for,request
 from flask_login import current_user,login_user,logout_user,login_required
 from app.models import User
 from werkzeug.urls import url_parse
-from app import db
+from app.models import Post
 from datetime import datetime
-@app.route('/')
-@app.route('/index')
-@login_required
 
+@app.route('/',methods = ['GET','POST'])
+@app.route('/index',methods = ['GET','POST'])
+@login_required
 def index():
-    user={'username':'Bharat'}
+    form = PostForm()
+    if form.validate_on_submit():
+        post = Post(body=form.post.data,author =current_user)
+        db.session.add(post)
+        db.commit()
+        flash('Your post is now live!')
+        return redirect(url_for('index'))
+
     posts = [
         {
             'author': {'username': 'John'},
@@ -23,7 +30,7 @@ def index():
             'body': 'The Avengers movie was so cool!'
         }
     ]
-    return render_template('index.html',title='Home Page',posts=posts)
+    return render_template('index.html',title='Home Page',posts=posts,form=form)
 
 @app.route('/login',methods=['GET','POST'])
 def login():
@@ -146,4 +153,6 @@ def unfollow(username):
         return redirect(url_for('user',username=username))
     else:
         return redirect(url_for('index'))
+
+
 
