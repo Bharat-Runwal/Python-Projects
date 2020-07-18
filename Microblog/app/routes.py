@@ -16,7 +16,7 @@ def index():
     if form.validate_on_submit():
         post = Post(body=form.post.data,author =current_user)
         db.session.add(post)
-        db.commit()
+        db.session.commit()
         flash('Your post is now live!')
         return redirect(url_for('index'))
 
