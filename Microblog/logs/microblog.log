@@ -35,3 +35,24 @@ Traceback (most recent call last):
 jinja2.exceptions.UndefinedError: 'app.forms.EmptyForm object' has no attribute 'submit'
 2020-07-17 15:19:57,326 INFO: Microblog startup [in C:\Users\lenovo\Desktop\microblog\Python-Projects\Microblog\app\__init__.py:44]
 2020-07-18 14:45:06,594 INFO: Microblog startup [in C:\Users\lenovo\Desktop\microblog\Python-Projects\Microblog\app\__init__.py:44]
+2020-07-18 15:17:44,349 INFO: Microblog startup [in C:\Users\lenovo\Desktop\microblog\Python-Projects\Microblog\app\__init__.py:44]
+2020-07-18 15:18:06,604 ERROR: Exception on /index [POST] [in c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask\app.py:1892]
+Traceback (most recent call last):
+  File "c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\lenovo\Desktop\microblog\Python-Projects\Microblog\app\routes.py", line 19, in index
+    db.commit()
+AttributeError: 'SQLAlchemy' object has no attribute 'commit'
+2020-07-18 15:19:45,596 INFO: Microblog startup [in C:\Users\lenovo\Desktop\microblog\Python-Projects\Microblog\app\__init__.py:44]
