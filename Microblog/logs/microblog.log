@@ -17,3 +17,4 @@ Traceback (most recent call last):
   File "C:\Users\lenovo\Desktop\microblog\Python-Projects\Microblog\app\routes.py", line 83, in user
     prev_url = url_for('user',username=user.username,page=posts.next_prev) if posts.has_prev else None
 AttributeError: 'Pagination' object has no attribute 'next_prev'
+2020-07-18 15:51:34,086 INFO: Microblog startup [in C:\Users\lenovo\Desktop\microblog\Python-Projects\Microblog\app\__init__.py:44]
