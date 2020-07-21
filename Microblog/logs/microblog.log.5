@@ -1,4 +1,13 @@
-2020-07-21 13:49:23,142 ERROR: Exception on /reset_password_request [GET] [in c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask\app.py:1892]
+2020-07-15 12:34:32,368 INFO: Microblog startup [in C:\Users\lenovo\Desktop\microblog\Python-Projects\Microblog\app\__init__.py:44]
+2020-07-16 23:23:15,460 INFO: Microblog startup [in C:\Users\lenovo\Desktop\microblog\Python-Projects\Microblog\app\__init__.py:44]
+2020-07-16 23:24:31,022 INFO: Microblog startup [in C:\Users\lenovo\Desktop\microblog\Python-Projects\Microblog\app\__init__.py:44]
+2020-07-16 23:24:44,849 INFO: Microblog startup [in C:\Users\lenovo\Desktop\microblog\Python-Projects\Microblog\app\__init__.py:44]
+2020-07-17 14:42:25,129 INFO: Microblog startup [in c:\Users\lenovo\Desktop\microblog\Python-Projects\Microblog\app\__init__.py:44]
+2020-07-17 14:45:12,705 INFO: Microblog startup [in c:\Users\lenovo\Desktop\microblog\Python-Projects\Microblog\app\__init__.py:44]
+2020-07-17 14:45:14,159 INFO: Microblog startup [in c:\Users\lenovo\Desktop\microblog\Python-Projects\Microblog\app\__init__.py:44]
+2020-07-17 14:46:05,401 INFO: Microblog startup [in c:\Users\lenovo\Desktop\microblog\Python-Projects\Microblog\app\__init__.py:44]
+2020-07-17 15:16:13,012 INFO: Microblog startup [in C:\Users\lenovo\Desktop\microblog\Python-Projects\Microblog\app\__init__.py:44]
+2020-07-17 15:17:41,818 ERROR: Exception on /user/susan [GET] [in c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask\app.py:1892]
 Traceback (most recent call last):
   File "c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
     response = self.full_dispatch_request()
@@ -12,8 +21,10 @@ Traceback (most recent call last):
     rv = self.dispatch_request()
   File "c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "C:\Users\lenovo\Desktop\microblog\Python-Projects\Microblog\app\routes.py", line 183, in reset_password_request
-    return render_template('reset_password_request.html',title="Reset Password",form=form)
+  File "c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\lenovo\Desktop\microblog\Python-Projects\Microblog\app\routes.py", line 79, in user
+    return render_template('user.html',user = user,posts=posts,form=form)
   File "c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask\templating.py", line 140, in render_template
     ctx.app,
   File "c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask\templating.py", line 120, in _render
@@ -24,14 +35,14 @@ Traceback (most recent call last):
     reraise(*rewrite_traceback_stack(source=source))
   File "c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\jinja2\_compat.py", line 28, in reraise
     raise value.with_traceback(tb)
-  File "C:\Users\lenovo\Desktop\microblog\Python-Projects\Microblog\app\templates\reset_password_request.html", line 1, in top-level template code
+  File "C:\Users\lenovo\Desktop\microblog\Python-Projects\Microblog\app\templates\user.html", line 1, in top-level template code
     {% extends "base.html" %}
-  File "C:\Users\lenovo\Desktop\microblog\Python-Projects\Microblog\app\templates\base.html", line 30, in top-level template code
+  File "C:\Users\lenovo\Desktop\microblog\Python-Projects\Microblog\app\templates\base.html", line 29, in top-level template code
     {% block content %}{% endblock %}
-  File "C:\Users\lenovo\Desktop\microblog\Python-Projects\Microblog\app\templates\reset_password_request.html", line 6, in block "content"
-    {{form.hiddent_tag()}}
-jinja2.exceptions.UndefinedError: 'app.forms.ResetPasswordRequestForm object' has no attribute 'hiddent_tag'
-2020-07-21 13:50:59,108 ERROR: Exception on /reset_password_request [GET] [in c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask\app.py:1892]
+  File "C:\Users\lenovo\Desktop\microblog\Python-Projects\Microblog\app\templates\user.html", line 17, in block "content"
+    {{form.submit(value='Follow')}}
+jinja2.exceptions.UndefinedError: 'app.forms.EmptyForm object' has no attribute 'submit'
+2020-07-17 15:18:14,395 ERROR: Exception on /user/bharat [GET] [in c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask\app.py:1892]
 Traceback (most recent call last):
   File "c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
     response = self.full_dispatch_request()
@@ -45,8 +56,10 @@ Traceback (most recent call last):
     rv = self.dispatch_request()
   File "c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "C:\Users\lenovo\Desktop\microblog\Python-Projects\Microblog\app\routes.py", line 183, in reset_password_request
-    return render_template('reset_password_request.html',title="Reset Password",form=form)
+  File "c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\lenovo\Desktop\microblog\Python-Projects\Microblog\app\routes.py", line 79, in user
+    return render_template('user.html',user = user,posts=posts,form=form)
   File "c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask\templating.py", line 140, in render_template
     ctx.app,
   File "c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask\templating.py", line 120, in _render
@@ -57,31 +70,10 @@ Traceback (most recent call last):
     reraise(*rewrite_traceback_stack(source=source))
   File "c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\jinja2\_compat.py", line 28, in reraise
     raise value.with_traceback(tb)
-  File "C:\Users\lenovo\Desktop\microblog\Python-Projects\Microblog\app\templates\reset_password_request.html", line 1, in top-level template code
+  File "C:\Users\lenovo\Desktop\microblog\Python-Projects\Microblog\app\templates\user.html", line 1, in top-level template code
     {% extends "base.html" %}
-  File "C:\Users\lenovo\Desktop\microblog\Python-Projects\Microblog\app\templates\base.html", line 30, in top-level template code
+  File "C:\Users\lenovo\Desktop\microblog\Python-Projects\Microblog\app\templates\base.html", line 29, in top-level template code
     {% block content %}{% endblock %}
-  File "C:\Users\lenovo\Desktop\microblog\Python-Projects\Microblog\app\templates\reset_password_request.html", line 6, in block "content"
-    {{form.hidden_tag()}}
-jinja2.exceptions.UndefinedError: 'app.forms.ResetPasswordRequestForm object' has no attribute 'hiddent_tag'
-2020-07-21 13:51:06,605 INFO: Microblog startup [in C:\Users\lenovo\Desktop\microblog\Python-Projects\Microblog\app\__init__.py:44]
-2020-07-21 13:51:18,814 ERROR: Exception on /reset_password_request [POST] [in c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask\app.py:1892]
-Traceback (most recent call last):
-  File "c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
-    response = self.full_dispatch_request()
-  File "c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
-    raise value
-  File "c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "C:\Users\lenovo\Desktop\microblog\Python-Projects\Microblog\app\routes.py", line 180, in reset_password_request
-    send_password_reset_email(user)
-  File "C:\Users\lenovo\Desktop\microblog\Python-Projects\Microblog\app\email.py", line 13, in send_password_reset_email
-    token = user.get_reset_password_token()
-AttributeError: 'BaseQuery' object has no attribute 'get_reset_password_token'
-2020-07-21 13:52:45,175 INFO: Microblog startup [in C:\Users\lenovo\Desktop\microblog\Python-Projects\Microblog\app\__init__.py:44]
+  File "C:\Users\lenovo\Desktop\microblog\Python-Projects\Microblog\app\templates\user.html", line 17, in block "content"
+    {{form.submit(value='Follow')}}
+jinja2.exceptions.UndefinedError: 'app.forms.EmptyForm object' has no attribute 'submit'

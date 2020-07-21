@@ -1,0 +1,83 @@
+2020-07-18 15:50:29,298 ERROR: Exception on /user/susan [GET] [in c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask\app.py:1892]
+Traceback (most recent call last):
+  File "c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\lenovo\Desktop\microblog\Python-Projects\Microblog\app\routes.py", line 83, in user
+    prev_url = url_for('user',username=user.username,page=posts.next_prev) if posts.has_prev else None
+AttributeError: 'Pagination' object has no attribute 'next_prev'
+2020-07-18 15:51:34,086 INFO: Microblog startup [in C:\Users\lenovo\Desktop\microblog\Python-Projects\Microblog\app\__init__.py:44]
+2020-07-20 13:04:17,812 INFO: Microblog startup [in C:\Users\lenovo\Desktop\microblog\Python-Projects\Microblog\app\__init__.py:44]
+2020-07-20 13:04:34,226 INFO: Microblog startup [in C:\Users\lenovo\Desktop\microblog\Python-Projects\Microblog\app\__init__.py:44]
+2020-07-20 13:08:38,661 INFO: Microblog startup [in C:\Users\lenovo\Desktop\microblog\Python-Projects\Microblog\app\__init__.py:44]
+2020-07-21 12:06:12,914 INFO: Microblog startup [in C:\Users\lenovo\Desktop\microblog\Python-Projects\Microblog\app\__init__.py:44]
+2020-07-21 12:15:50,346 INFO: Microblog startup [in C:\Users\lenovo\Desktop\microblog\Python-Projects\Microblog\app\__init__.py:44]
+2020-07-21 12:21:12,999 INFO: Microblog startup [in C:\Users\lenovo\Desktop\microblog\Python-Projects\Microblog\app\__init__.py:44]
+2020-07-21 13:42:01,197 INFO: Microblog startup [in C:\Users\lenovo\Desktop\microblog\Python-Projects\Microblog\app\__init__.py:44]
+2020-07-21 13:42:11,540 ERROR: Exception on /reset_password_request [GET] [in c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask\app.py:1892]
+Traceback (most recent call last):
+  File "c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\lenovo\Desktop\microblog\Python-Projects\Microblog\app\routes.py", line 173, in reset_password_request
+    if current_user.is_authenticated():
+TypeError: 'bool' object is not callable
+2020-07-21 13:42:47,252 INFO: Microblog startup [in C:\Users\lenovo\Desktop\microblog\Python-Projects\Microblog\app\__init__.py:44]
+2020-07-21 13:42:53,412 ERROR: Exception on /reset_password_request [GET] [in c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask\app.py:1892]
+Traceback (most recent call last):
+  File "c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\lenovo\Desktop\microblog\Python-Projects\Microblog\app\routes.py", line 173, in reset_password_request
+    if current_user.is_authenticated():
+TypeError: 'bool' object is not callable
+2020-07-21 13:43:18,166 INFO: Microblog startup [in C:\Users\lenovo\Desktop\microblog\Python-Projects\Microblog\app\__init__.py:44]
+2020-07-21 13:44:12,140 ERROR: Exception on /reset_password_request [GET] [in c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask\app.py:1892]
+Traceback (most recent call last):
+  File "c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\lenovo\Desktop\microblog\Python-Projects\Microblog\app\routes.py", line 180, in reset_password_request
+    send_password_reset_email(user)
+  File "C:\Users\lenovo\Desktop\microblog\Python-Projects\Microblog\app\email.py", line 13, in send_password_reset_email
+    token = user.get_reset_password_token()
+AttributeError: 'BaseQuery' object has no attribute 'get_reset_password_token'
+2020-07-21 13:49:18,192 INFO: Microblog startup [in C:\Users\lenovo\Desktop\microblog\Python-Projects\Microblog\app\__init__.py:44]
