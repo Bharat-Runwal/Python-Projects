@@ -27,3 +27,26 @@ Traceback (most recent call last):
   File "C:\Users\lenovo\anaconda3\envs\cs231n\lib\smtplib.py", line 752, in starttls
     "STARTTLS extension not supported by server.")
 smtplib.SMTPNotSupportedError: STARTTLS extension not supported by server.
+2020-07-22 15:07:57,690 INFO: Microblog startup [in C:\Users\lenovo\Desktop\microblog\Python-Projects\Microblog\app\__init__.py:44]
+2020-07-22 15:12:02,456 INFO: Microblog startup [in C:\Users\lenovo\Desktop\microblog\Python-Projects\Microblog\app\__init__.py:44]
+2020-07-22 15:13:41,428 INFO: Microblog startup [in C:\Users\lenovo\Desktop\microblog\Python-Projects\Microblog\app\__init__.py:44]
+2020-07-22 15:14:18,488 INFO: Microblog startup [in C:\Users\lenovo\Desktop\microblog\Python-Projects\Microblog\app\__init__.py:44]
+2020-07-22 15:15:45,724 INFO: Microblog startup [in C:\Users\lenovo\Desktop\microblog\Python-Projects\Microblog\app\__init__.py:44]
+2020-07-22 15:16:26,383 ERROR: Exception on /reset_password/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyZXNldF9wYXNzd29yZCI6MywiZXhwIjoxNTk1NDExNzU4LjgwNzQxNX0.7nXS5nT_v-jwXLhY6nULs8AeUDOH4ZI7LL6HGfu3hHU [GET] [in c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask\app.py:1892]
+Traceback (most recent call last):
+  File "c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\lenovo\Desktop\microblog\Python-Projects\Microblog\app\routes.py", line 192, in reset_password
+    form = ResetPasswordForm()
+NameError: name 'ResetPasswordForm' is not defined
+2020-07-22 15:16:57,275 INFO: Microblog startup [in C:\Users\lenovo\Desktop\microblog\Python-Projects\Microblog\app\__init__.py:44]

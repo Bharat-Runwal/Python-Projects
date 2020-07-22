@@ -1,7 +1,7 @@
 FLASK_APP=microblog.py
 FlASK_DEBUG=0
-MAIL_SERVER =localhost
-MAIL_PORT =8025
+MAIL_SERVER =smtp.googlemail.com
+MAIL_PORT =587  
 MAIL_USE_TLS=1
-MAIL_USERNAME =work_related.bharat@gmail.com
-MAIL_PASSWORD = 9413141514
+MAIL_USERNAME ="workrelated.bharat@gmail.com"
+MAIL_PASSWORD = "9413141514"
