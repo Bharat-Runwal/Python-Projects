@@ -50,3 +50,5 @@ Traceback (most recent call last):
     form = ResetPasswordForm()
 NameError: name 'ResetPasswordForm' is not defined
 2020-07-22 15:16:57,275 INFO: Microblog startup [in C:\Users\lenovo\Desktop\microblog\Python-Projects\Microblog\app\__init__.py:44]
+2020-07-22 16:24:26,825 INFO: Microblog startup [in C:\Users\lenovo\Desktop\microblog\Python-Projects\Microblog\app\__init__.py:47]
+2020-07-23 10:47:45,049 INFO: Microblog startup [in C:\Users\lenovo\Desktop\microblog\Python-Projects\Microblog\app\__init__.py:47]
