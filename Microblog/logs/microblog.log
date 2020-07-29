@@ -67,3 +67,5 @@ TypeError: 'module' object is not subscriptable
 2020-07-24 14:15:47,533 INFO: Microblog startup [in C:\Users\lenovo\Desktop\microblog\Python-Projects\Microblog\app\__init__.py:59]
 2020-07-24 14:16:25,348 INFO: Microblog startup [in C:\Users\lenovo\Desktop\microblog\Python-Projects\Microblog\app\__init__.py:59]
 2020-07-29 17:16:14,286 INFO: Microblog startup [in C:\Users\lenovo\Desktop\microblog\Python-Projects\Microblog\app\__init__.py:59]
+2020-07-29 17:38:17,937 INFO: Microblog startup [in C:\Users\lenovo\Desktop\microblog\Python-Projects\Microblog\app\__init__.py:59]
+2020-07-29 17:38:31,911 INFO: Microblog startup [in C:\Users\lenovo\Desktop\microblog\Python-Projects\Microblog\app\__init__.py:59]

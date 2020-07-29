@@ -8,7 +8,7 @@ from app.forms import LoginForm, RegistrationForm, EditProfileForm, \
     EmptyForm, PostForm, ResetPasswordRequestForm, ResetPasswordForm
 from app.models import User, Post
 from app.email import send_password_reset_email
-
+from guess_language import guess_language
 
 @app.before_request
 def before_request():
@@ -24,7 +24,11 @@ def before_request():
 def index():
     form = PostForm()
     if form.validate_on_submit():
-        post = Post(body=form.post.data, author=current_user)
+        language = guess_language(form.post.data)
+        if language =='UNKNOWN' or len(language) >5 :
+            language=''
+        
+        post = Post(body=form.post.data, author=current_user,language=language)
         db.session.add(post)
         db.session.commit()
         flash(_('Your post is now live!'))
