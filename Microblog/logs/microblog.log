@@ -1,4 +1,4 @@
-2020-07-24 14:02:28,771 ERROR: Exception on / [GET] [in c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask\app.py:1892]
+2020-07-30 22:55:50,624 ERROR: Exception on / [GET] [in c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask\app.py:1892]
 Traceback (most recent call last):
   File "c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
     response = self.full_dispatch_request()
@@ -8,64 +8,45 @@ Traceback (most recent call last):
     reraise(exc_type, exc_value, tb)
   File "c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
     raise value
-  File "c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask\app.py", line 1948, in full_dispatch_request
-    rv = self.preprocess_request()
-  File "c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask\app.py", line 2242, in preprocess_request
-    rv = func()
-  File "C:\Users\lenovo\Desktop\microblog\Python-Projects\Microblog\app\routes.py", line 18, in before_request
-    g.locale = str(get_locale())
-  File "c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask_babel\__init__.py", line 251, in get_locale
-    rv = babel.locale_selector_func()
-  File "C:\Users\lenovo\Desktop\microblog\Python-Projects\Microblog\app\__init__.py", line 32, in get_locale
-    return request.accept_languages.best_match(config['LANGUAGES'])
-NameError: name 'config' is not defined
-2020-07-24 14:02:36,700 ERROR: Exception on /favicon.ico [GET] [in c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask\app.py:1892]
-Traceback (most recent call last):
-  File "c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
-    response = self.full_dispatch_request()
-  File "c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
-    raise value
-  File "c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask\app.py", line 1948, in full_dispatch_request
-    rv = self.preprocess_request()
-  File "c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask\app.py", line 2242, in preprocess_request
-    rv = func()
-  File "C:\Users\lenovo\Desktop\microblog\Python-Projects\Microblog\app\routes.py", line 18, in before_request
-    g.locale = str(get_locale())
-  File "c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask_babel\__init__.py", line 251, in get_locale
-    rv = babel.locale_selector_func()
-  File "C:\Users\lenovo\Desktop\microblog\Python-Projects\Microblog\app\__init__.py", line 32, in get_locale
-    return request.accept_languages.best_match(config['LANGUAGES'])
-NameError: name 'config' is not defined
-2020-07-24 14:03:04,870 INFO: Microblog startup [in C:\Users\lenovo\Desktop\microblog\Python-Projects\Microblog\app\__init__.py:60]
-2020-07-24 14:03:07,252 ERROR: Exception on / [GET] [in c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask\app.py:1892]
-Traceback (most recent call last):
-  File "c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
-    response = self.full_dispatch_request()
-  File "c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
-    raise value
-  File "c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask\app.py", line 1948, in full_dispatch_request
-    rv = self.preprocess_request()
-  File "c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask\app.py", line 2242, in preprocess_request
-    rv = func()
-  File "C:\Users\lenovo\Desktop\microblog\Python-Projects\Microblog\app\routes.py", line 18, in before_request
-    g.locale = str(get_locale())
-  File "c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask_babel\__init__.py", line 251, in get_locale
-    rv = babel.locale_selector_func()
-  File "C:\Users\lenovo\Desktop\microblog\Python-Projects\Microblog\app\__init__.py", line 33, in get_locale
-    return request.accept_languages.best_match(config['LANGUAGES'])
-TypeError: 'module' object is not subscriptable
-2020-07-24 14:04:38,830 INFO: Microblog startup [in C:\Users\lenovo\Desktop\microblog\Python-Projects\Microblog\app\__init__.py:59]
-2020-07-24 14:05:27,192 INFO: Microblog startup [in C:\Users\lenovo\Desktop\microblog\Python-Projects\Microblog\app\__init__.py:59]
-2020-07-24 14:15:47,533 INFO: Microblog startup [in C:\Users\lenovo\Desktop\microblog\Python-Projects\Microblog\app\__init__.py:59]
-2020-07-24 14:16:25,348 INFO: Microblog startup [in C:\Users\lenovo\Desktop\microblog\Python-Projects\Microblog\app\__init__.py:59]
-2020-07-29 17:16:14,286 INFO: Microblog startup [in C:\Users\lenovo\Desktop\microblog\Python-Projects\Microblog\app\__init__.py:59]
-2020-07-29 17:38:17,937 INFO: Microblog startup [in C:\Users\lenovo\Desktop\microblog\Python-Projects\Microblog\app\__init__.py:59]
-2020-07-29 17:38:31,911 INFO: Microblog startup [in C:\Users\lenovo\Desktop\microblog\Python-Projects\Microblog\app\__init__.py:59]
+  File "c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\lenovo\Desktop\microblog\Python-Projects\Microblog\app\routes.py", line 45, in index
+    prev_url=prev_url)
+  File "c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask\templating.py", line 140, in render_template
+    ctx.app,
+  File "c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\lenovo\Desktop\microblog\Python-Projects\Microblog\app\templates\index.html", line 2, in top-level template code
+    {% import 'bootstrap/wtf.html' as wtf %}
+  File "C:\Users\lenovo\Desktop\microblog\Python-Projects\Microblog\app\templates\base.html", line 1, in top-level template code
+    {% extends 'bootstrap/base.html' %}
+  File "c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 4, in block "doc"
+    {%- block html %}
+  File "c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block "html"
+    {% block body -%}
+  File "c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 23, in block "body"
+    {% block content -%}
+  File "C:\Users\lenovo\Desktop\microblog\Python-Projects\Microblog\app\templates\base.html", line 48, in block "content"
+    {% block app_content %}{% endblock %}
+  File "C:\Users\lenovo\Desktop\microblog\Python-Projects\Microblog\app\templates\index.html", line 11, in block "app_content"
+    {% include '_post.html' %}
+  File "c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "c:\users\lenovo\desktop\microblog\python-projects\microblog\venv\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\lenovo\Desktop\microblog\Python-Projects\Microblog\app\templates\_post.html", line 19, in template
+    {% if post.language & post.language != g.locale %}
+jinja2.exceptions.TemplateSyntaxError: unexpected char '&' at 733
+2020-07-30 22:58:14,014 INFO: Microblog startup [in C:\Users\lenovo\Desktop\microblog\Python-Projects\Microblog\app\__init__.py:59]
