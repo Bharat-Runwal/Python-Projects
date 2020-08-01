@@ -1,5 +1,5 @@
 import os
-from flask import Flask,request
+from flask import Flask,request,Blueprint
 from config import Config
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
@@ -24,6 +24,7 @@ login.login_message = _l('Please log in to access this page.')
 bootstrap = Bootstrap(app)
 moment = Moment(app)
 babel =Babel(app)
+bp = Blueprint('errors',__name__)
 
 
 
@@ -58,5 +59,10 @@ if not app.debug:
     app.logger.setLevel(logging.INFO)
     app.logger.info('Microblog startup')
 
-        
-from app import routes,models,errors
+
+from app.errors import bp as errors_bp
+app.register_blueprint(errors_bp)
+
+
+
+from app import routes,models
