@@ -6,7 +6,7 @@ from flask_login import UserMixin
 from werkzeug.security import generate_password_hash, check_password_hash
 import jwt
 from app import db, login
-
+from app.search import add_to_index,query_index,remove_from_index
 
 followers = db.Table(
     'followers',
@@ -92,3 +92,5 @@ class Post(db.Model):
 
     def __repr__(self):
         return '<Post {}>'.format(self.body)
+
+    __searchable__ =['body']
