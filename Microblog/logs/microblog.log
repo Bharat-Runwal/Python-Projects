@@ -51,3 +51,4 @@ Traceback (most recent call last):
 jinja2.exceptions.TemplateSyntaxError: unexpected char '&' at 733
 2020-07-30 22:58:14,014 INFO: Microblog startup [in C:\Users\lenovo\Desktop\microblog\Python-Projects\Microblog\app\__init__.py:59]
 2020-08-01 11:23:55,998 INFO: Microblog startup [in C:\Users\lenovo\Desktop\microblog\Python-Projects\Microblog\app\__init__.py:74]
+2020-08-04 09:56:19,374 INFO: Microblog startup [in C:\Users\lenovo\Desktop\microblog\Python-Projects\Microblog\app\__init__.py:74]
